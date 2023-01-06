@@ -1,0 +1,21 @@
+#%RAML 1.0
+title: Performance Test API
+mediaType:
+  - application/json
+version: "1.0"
+protocols:
+  - HTTP
+/user:
+  get:
+    body: {}
+    responses:
+      "200":
+        body:
+          example:
+            strict: true
+            value:
+              id: 6
+              f_name: Jesse
+              l_name: Pinkman
+          type: object
+    securedBy: []
